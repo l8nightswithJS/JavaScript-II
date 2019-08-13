@@ -98,10 +98,16 @@ console.log(bigDonations);
 
 
 // Problem 2
-// make alphabetical list for seating at event.
+// make alphabetical list for runners at event.
 alphabeticalList = [];
 alphabeticalList = runners.map(function(value){
     return value.first_name;
 })
 console.log(alphabeticalList.sort());
 // Problem 3
+//select company name for later use in assigning company stats.
+let companyName = [];
+runners.forEach(function(value){
+    companyName.push(`${value.company_name}`);
+})
+console.log(companyName);
