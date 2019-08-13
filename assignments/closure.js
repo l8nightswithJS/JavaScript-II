@@ -1,5 +1,13 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function sayHello() {
+  var hello = "Hi there";
+  function alertGreeting() {
+    alert(hello);
+  }
+  return alertGreeting();
+}
+var newFunction = sayHello();
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
